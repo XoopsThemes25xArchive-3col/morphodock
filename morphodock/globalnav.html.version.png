@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>CSS Mac Dock</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="dock" id="dock">
+  <div class="dock-container">
+  <a class="dock-item" href="<{xoAppUrl /index.php}>"><img src="<{xoAppUrl /themes/morphodock/img/imgdock/m.png}>" alt="home" /><span>Accueil</span></a> 
+  <a class="dock-item" href="#"><img src="<{xoAppUrl /themes/morphodock/img/imgdock/o.png}>" alt="home" /><span>exemple</span></a>
+  <a class="dock-item" href="#"><img src="<{xoAppUrl /themes/morphodock/img/imgdock/r.png}>" alt="home" /><span>exemple</span></a>
+  <a class="dock-item" href="#"><img src="<{xoAppUrl /themes/morphodock/img/imgdock/p.png}>" alt="home" /><span>exemple</span></a>
+  <a class="dock-item" href="#"><img src="<{xoAppUrl /themes/morphodock/img/imgdock/h.png}>" alt="home" /><span>exemple</span></a>
+  <a class="dock-item" href="#"><img src="<{xoAppUrl /themes/morphodock/img/imgdock/o.png}>" alt="home" /><span>exemple</span></a>
+  <a class="dock-item" href="#"><img src="<{xoAppUrl /themes/morphodock/img/imgdock/esp.png}>" alt="home" /><span>exemple</span></a>
+  <a class="dock-item" href="#"><img src="<{xoAppUrl /themes/morphodock/img/imgdock/d.png}>" alt="home" /><span>exemple</span></a>
+  <a class="dock-item" href="#"><img src="<{xoAppUrl /themes/morphodock/img/imgdock/o.png}>" alt="home" /><span>exemple</span></a>
+  <a class="dock-item" href="#"><img src="<{xoAppUrl /themes/morphodock/img/imgdock/c.png}>" alt="home" /><span>exemple</span></a>
+  <a class="dock-item" href="#"><img src="<{xoAppUrl /themes/morphodock/img/imgdock/k.png}>" alt="home" /><span>exemple</span></a>
+</div>
+</div>
+<script type="text/javascript">
+	
+	$(document).ready(
+		function()
+		{
+			$('#dock').Fisheye(
+				{
+					maxWidth: 100,
+					items: 'a',
+					itemsText: 'span',
+					container: '.dock-container',
+					itemWidth: 60,
+					proximity: 50,
+					halign : 'center'
+				}
+			)
+		}
+	);
+
+</script>
+</body>
+</html>
